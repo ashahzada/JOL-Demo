@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BCVTB-client>
+  <ipc>
+    <socket port="52512" hostname="Adnans-MacBook-Pro-2.local"/>
+  </ipc>
+</BCVTB-client>
+

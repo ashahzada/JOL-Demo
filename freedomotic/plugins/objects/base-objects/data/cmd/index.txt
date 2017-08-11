@@ -1,0 +1,4 @@
+#Filename 		 #CommandName 			 #Destination
+all-lights-off.xcmd		turn off all lights			app.events.sensors.behavior.request.objects
+all-lights-on.xcmd		turn on all lights			app.events.sensors.behavior.request.objects
+switch-all-lights.xcmd		switch power of all lights			app.events.sensors.behavior.request.objects

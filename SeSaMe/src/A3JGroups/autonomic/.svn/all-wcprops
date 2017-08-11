@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/53/branches/Autonomic/src/A3JGroups/autonomic
+END
+org.eclipse.jdt.core_3.8.2.v20120814-155456.jar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/51/branches/Autonomic/src/A3JGroups/autonomic/org.eclipse.jdt.core_3.8.2.v20120814-155456.jar
+END
+AutonomicJGSupervisorRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/53/branches/Autonomic/src/A3JGroups/autonomic/AutonomicJGSupervisorRole.java
+END
+AutonomicJGFollowerRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/53/branches/Autonomic/src/A3JGroups/autonomic/AutonomicJGFollowerRole.java
+END
+MAPEManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/53/branches/Autonomic/src/A3JGroups/autonomic/MAPEManager.java
+END

@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path:  lib/freedomotic.jar lib/freedomotic-model.jar
+Main-Class: it.telecomitalia.scube.a3.A3

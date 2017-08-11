@@ -1,0 +1,68 @@
+<it.freedomotic.model.object.EnvObject>
+  <name>Office 1 switch</name>
+  <description>the switch in office 1</description>
+  <actAs></actAs>
+  <type>EnvObject.ElectricDevice</type>
+  <uuid>167be994-45df-4ec8-929b-06fc4cfdbb41</uuid>
+  <hierarchy>it.freedomotic.objects.impl.ElectricDevice</hierarchy>
+  <protocol>own</protocol>
+  <phisicalAddress>1*701988900#9</phisicalAddress>
+  <behaviors>
+    <it.freedomotic.model.object.BooleanBehavior>
+      <name>powered</name>
+      <description></description>
+      <active>true</active>
+      <priority>-1</priority>
+      <readOnly>false</readOnly>
+      <value>true</value>
+    </it.freedomotic.model.object.BooleanBehavior>
+  </behaviors>
+  <representation>
+    <view>
+      <tangible>true</tangible>
+      <intersecable>false</intersecable>
+      <offset x="846" y="535"/>
+      <rotation>0.0</rotation>
+      <icon>togglebutton-off.png</icon>
+      <fillColor>#000000</fillColor>
+      <textColor>#000000</textColor>
+      <borderColor>#000000</borderColor>
+      <scaleX>0.0</scaleX>
+      <scaleY>0.0</scaleY>
+      <shape class="polygon">
+        <point x="0" y="0"/>
+        <point x="64" y="0"/>
+        <point x="64" y="64"/>
+        <point x="0" y="64"/>
+      </shape>
+    </view>
+    <view>
+      <tangible>true</tangible>
+      <intersecable>false</intersecable>
+      <offset x="846" y="535"/>
+      <rotation>0.0</rotation>
+      <icon>togglebutton-on.png</icon>
+      <fillColor>#000000</fillColor>
+      <textColor>#000000</textColor>
+      <borderColor>#000000</borderColor>
+      <scaleX>0.0</scaleX>
+      <scaleY>0.0</scaleY>
+      <shape class="polygon">
+        <point x="0" y="0"/>
+        <point x="64" y="0"/>
+        <point x="64" y="64"/>
+        <point x="0" y="64"/>
+      </shape>
+    </view>
+  </representation>
+  <tags/>
+  <actions>
+    <property name="turn off" value="Turn off OWN ZigBee light"/>
+    <property name="turn on" value="Turn on OWN ZigBee light"/>
+  </actions>
+  <triggers>
+    <property name="OWN ZigBee protocol reads a light power change" value="powered"/>
+  </triggers>
+  <currentRepresentation>1</currentRepresentation>
+  <envUUID>44127b0a-4614-4d7b-a99c-a31a2b605607</envUUID>
+</it.freedomotic.model.object.EnvObject>

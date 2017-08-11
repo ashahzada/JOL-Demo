@@ -1,0 +1,84 @@
+<it.freedomotic.model.object.EnvObject>
+  <name>Emergency door lights</name>
+  <description>Emergency door lights</description>
+  <actAs>virtual</actAs>
+  <type>EnvObject.ElectricDevice.Light</type>
+  <uuid>5d7a9234-a399-4325-9505-f390585dc340</uuid>
+  <hierarchy>it.freedomotic.objects.impl.Light</hierarchy>
+  <protocol>unknown</protocol>
+  <phisicalAddress>1*47731300#9</phisicalAddress>
+  <behaviors>
+    <it.freedomotic.model.object.BooleanBehavior>
+      <name>powered</name>
+      <description></description>
+      <active>true</active>
+      <priority>-1</priority>
+      <readOnly>false</readOnly>
+      <value>false</value>
+    </it.freedomotic.model.object.BooleanBehavior>
+    <it.freedomotic.model.object.RangedIntBehavior>
+      <name>brightness</name>
+      <description></description>
+      <active>true</active>
+      <priority>-1</priority>
+      <readOnly>false</readOnly>
+      <value>0</value>
+      <max>100</max>
+      <min>0</min>
+      <scale>1</scale>
+      <step>10</step>
+    </it.freedomotic.model.object.RangedIntBehavior>
+  </behaviors>
+  <representation>
+    <view>
+      <tangible>true</tangible>
+      <intersecable>false</intersecable>
+      <offset x="157" y="273"/>
+      <rotation>0.0</rotation>
+      <icon>light-off.png</icon>
+      <fillColor>#000000</fillColor>
+      <textColor>#000000</textColor>
+      <borderColor>#000000</borderColor>
+      <scaleX>0.0</scaleX>
+      <scaleY>0.0</scaleY>
+      <shape class="polygon">
+        <point x="0" y="0"/>
+        <point x="64" y="0"/>
+        <point x="64" y="64"/>
+        <point x="0" y="64"/>
+      </shape>
+    </view>
+    <view>
+      <tangible>true</tangible>
+      <intersecable>false</intersecable>
+      <offset x="157" y="273"/>
+      <rotation>0.0</rotation>
+      <icon>light-on.png</icon>
+      <fillColor>#000000</fillColor>
+      <textColor>#000000</textColor>
+      <borderColor>#000000</borderColor>
+      <scaleX>0.0</scaleX>
+      <scaleY>0.0</scaleY>
+      <shape class="polygon">
+        <point x="0" y="0"/>
+        <point x="64" y="0"/>
+        <point x="64" y="64"/>
+        <point x="0" y="64"/>
+      </shape>
+    </view>
+  </representation>
+  <tags>
+    <string></string>
+  </tags>
+  <actions>
+    <property name="turn off" value="Turn off OWN ZigBee light"/>
+    <property name="set brightness" value="Dim OWN ZigBee light"/>
+    <property name="turn on" value="Turn on OWN ZigBee light"/>
+  </actions>
+  <triggers>
+    <property name="OWN ZigBee protocol reads a light brightness change" value="brightness"/>
+    <property name="OWN ZigBee protocol reads a light power change" value="powered"/>
+  </triggers>
+  <currentRepresentation>0</currentRepresentation>
+  <envUUID>44127b0a-4614-4d7b-a99c-a31a2b605607</envUUID>
+</it.freedomotic.model.object.EnvObject>

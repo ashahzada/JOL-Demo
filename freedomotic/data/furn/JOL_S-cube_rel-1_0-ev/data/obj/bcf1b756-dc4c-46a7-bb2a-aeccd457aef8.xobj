@@ -1,0 +1,94 @@
+<it.freedomotic.model.object.EnvObject>
+  <name>Massimo</name>
+  <description>A user in the environment</description>
+  <actAs></actAs>
+  <type>EnvObject.Person.User</type>
+  <uuid>bcf1b756-dc4c-46a7-bb2a-aeccd457aef8</uuid>
+  <hierarchy>it.freedomotic.objects.impl.Person</hierarchy>
+  <protocol>wifi_id</protocol>
+  <phisicalAddress>C4-85-08-90-E4-62</phisicalAddress>
+  <behaviors>
+    <it.freedomotic.model.object.BooleanBehavior>
+      <name>present</name>
+      <description></description>
+      <active>true</active>
+      <priority>-1</priority>
+      <readOnly>false</readOnly>
+      <value>false</value>
+    </it.freedomotic.model.object.BooleanBehavior>
+    <it.freedomotic.model.object.ListBehavior>
+      <name>activity</name>
+      <description></description>
+      <active>true</active>
+      <priority>-1</priority>
+      <readOnly>false</readOnly>
+      <selected>1</selected>
+      <list>
+        <string>Sleeping</string>
+        <string>Resting</string>
+        <string>Standing</string>
+        <string>Moving</string>
+      </list>
+    </it.freedomotic.model.object.ListBehavior>
+    <it.freedomotic.model.object.PropertiesBehavior>
+      <name>properties</name>
+      <description></description>
+      <active>true</active>
+      <priority>-1</priority>
+      <readOnly>false</readOnly>
+      <properties>
+        <property name="email" value="info@freedomotic.com"/>
+        <property name="birthdate" value="01/01/1900"/>
+      </properties>
+    </it.freedomotic.model.object.PropertiesBehavior>
+  </behaviors>
+  <representation>
+    <view>
+      <tangible>true</tangible>
+      <intersecable>false</intersecable>
+      <offset x="920" y="635"/>
+      <rotation>0.0</rotation>
+      <icon>person.png</icon>
+      <fillColor>#000000</fillColor>
+      <textColor>#000000</textColor>
+      <borderColor>#000000</borderColor>
+      <scaleX>0.0</scaleX>
+      <scaleY>0.0</scaleY>
+      <shape class="polygon">
+        <point x="0" y="0"/>
+        <point x="64" y="0"/>
+        <point x="64" y="64"/>
+        <point x="0" y="64"/>
+      </shape>
+    </view>
+    <view>
+      <tangible>true</tangible>
+      <intersecable>false</intersecable>
+      <offset x="920" y="635"/>
+      <rotation>0.0</rotation>
+      <icon>person.png</icon>
+      <fillColor>#000000</fillColor>
+      <textColor>#000000</textColor>
+      <borderColor>#000000</borderColor>
+      <scaleX>0.0</scaleX>
+      <scaleY>0.0</scaleY>
+      <shape class="polygon">
+        <point x="0" y="0"/>
+        <point x="64" y="0"/>
+        <point x="64" y="64"/>
+        <point x="0" y="64"/>
+      </shape>
+    </view>
+  </representation>
+  <tags/>
+  <actions>
+    <property name="turn off" value="Execute it successfully"/>
+    <property name="turn on" value="Execute it successfully"/>
+  </actions>
+  <triggers>
+    <property name="" value="powered"/>
+    <property name="Wifi_id: Read Present Status" value="present"/>
+  </triggers>
+  <currentRepresentation>0</currentRepresentation>
+  <envUUID>44127b0a-4614-4d7b-a99c-a31a2b605607</envUUID>
+</it.freedomotic.model.object.EnvObject>

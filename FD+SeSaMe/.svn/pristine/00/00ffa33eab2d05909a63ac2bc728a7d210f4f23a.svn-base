@@ -1,0 +1,7 @@
+#Filename 		 #CommandName 			 #Destination
+automation-down.xcmd		Move DOWN OWN automation			app.actuators.protocol.openwebnet.in
+automation-stop.xcmd		Stop OWN automation			app.actuators.protocol.openwebnet.in
+automation-up.xcmd		Move UP OWN automation			app.actuators.protocol.openwebnet.in
+light-dim.xcmd		Dim OWN light			app.actuators.protocol.openwebnet.in
+light-off.xcmd		Turn off OWN light			app.actuators.protocol.openwebnet.in
+light-on.xcmd		Turn on OWN light			app.actuators.protocol.openwebnet.in

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/JGroups.jar"/>
+	<classpathentry kind="lib" path="lib/freedomotic-model.jar"/>
+	<classpathentry kind="lib" path="lib/freedomotic.jar"/>
+	<classpathentry kind="lib" path="lib/knowledge-api-5.5.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/knowledge-internal-api-5.5.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/activemq-all-5.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/gestPassword.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

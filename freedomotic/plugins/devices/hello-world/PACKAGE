@@ -1,0 +1,16 @@
+package.type=device
+package.name=hello-world
+package.license=GNU GPL2
+package.nodeid=
+package.vendor.name=freedomotic
+package.vendor.surname=
+package.vendor.contact=
+package.vendor.company=Freedomotic
+package.vendor.nation=net
+framework.required.major=5
+framework.required.minor=5
+framework.required.build=x
+build.create.dist.market=true
+build.create.dist.framework=true
+build.synch.dist=true
+build.synch.dist.path=../../../framework/freedomotic-core/plugins/

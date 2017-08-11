@@ -1,0 +1,9 @@
+#Filename 		 #TriggerName 			 #ListenedChannel
+null		Every five seconds			app.event.sensor.calendar.event.schedule
+null		Every hour			app.event.sensor.calendar.event.schedule
+null		Every minute			app.event.sensor.calendar.event.schedule
+null		Every second			app.event.sensor.calendar.event.schedule
+null		Every ten seconds			app.event.sensor.calendar.event.schedule
+3a612c7a-ee61-4b44-bd05-eb9604584365		It's afternoon			app.event.sensor.calendar.event.schedule
+null		It's night time			app.event.sensor.calendar.event.schedule
+null		Simulate a powered change			app.event.sensor.protocol.read

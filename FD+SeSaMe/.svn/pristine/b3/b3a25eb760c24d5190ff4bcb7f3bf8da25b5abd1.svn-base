@@ -1,0 +1,19 @@
+#Mon, 04 Nov 2013 11:05:00 +0100
+
+package.type=device
+package.name=it.telecomitalia.a3
+package.nodeid=4209
+package.vendor.name=JOL
+package.vendor.surname=SCube
+package.vendor.contact=noreply@jolscube.it
+package.vendor.company=Telecom Italia
+package.vendor.nation=it
+framework.required.major=1
+framework.required.minor=0
+framework.required.build=0
+build.major=1
+build.number=1
+build.create.dist.market=false
+build.create.dist.framework=false
+build.synch.dist=false
+build.synch.dist.path=../../../framework/freedomotic/plugins/

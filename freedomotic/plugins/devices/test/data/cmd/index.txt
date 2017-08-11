@@ -1,0 +1,7 @@
+#Filename 		 #CommandName 			 #Destination
+int@0.xcmd		Show sensors simulator plugin GUI			app.actuators.plugins.controller.in
+int@1.xcmd		Inverse luminosity for Light in the entrance			app.events.sensors.behavior.request.objects
+int@2.xcmd		Ask something with dialog			command.jfrontend.user.callout
+int@3.xcmd		Execute it successfully			app.actuators.test.success.in
+int@4.xcmd		Restart Jfrontend Plugin			app.actuators.plugins.controller.in
+wait five seconds.xcmd		Wait five seconds			app.actuators.automation.delayer.in

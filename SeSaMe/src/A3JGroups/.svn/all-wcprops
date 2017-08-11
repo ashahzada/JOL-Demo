@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/53/branches/Autonomic/src/A3JGroups
+END
+A3JGFollowerRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/A3JGFollowerRole.java
+END
+A3JGRHMNotification.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/A3JGRHMNotification.java
+END
+SplitManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/SplitManager.java
+END
+MessageDelete.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/MessageDelete.java
+END
+A3JGSupervisorRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/A3JGSupervisorRole.java
+END
+A3JGMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/A3JGMessage.java
+END
+A3JGNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/A3JGNode.java
+END
+A3JGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/A3JGroup.java
+END
+ElectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/ElectionManager.java
+END
+GenericRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/50/branches/Autonomic/src/A3JGroups/GenericRole.java
+END

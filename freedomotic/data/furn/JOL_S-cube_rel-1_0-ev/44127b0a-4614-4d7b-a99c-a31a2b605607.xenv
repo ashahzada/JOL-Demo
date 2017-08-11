@@ -1,0 +1,115 @@
+<it.freedomotic.model.environment.Environment>
+  <name>My Environment</name>
+  <width>1500</width>
+  <height>1324</height>
+  <renderer>photo</renderer>
+  <backgroundColor>
+    <red>255</red>
+    <green>255</green>
+    <blue>255</blue>
+    <alpha>255</alpha>
+  </backgroundColor>
+  <backgroundImage>planimetria-jol.png</backgroundImage>
+  <zones>
+    <it.freedomotic.model.environment.Zone>
+      <name>Indoor</name>
+      <description></description>
+      <room>false</room>
+      <shape>
+        <point x="20" y="240"/>
+        <point x="1460" y="240"/>
+        <point x="1460" y="730"/>
+        <point x="1195" y="730"/>
+        <point x="1195" y="1165"/>
+        <point x="300" y="1165"/>
+        <point x="300" y="905"/>
+        <point x="20" y="905"/>
+      </shape>
+    </it.freedomotic.model.environment.Zone>
+    <it.freedomotic.model.environment.Zone>
+      <name>Demo</name>
+      <description></description>
+      <room>true</room>
+      <shape>
+        <point x="95" y="110"/>
+        <point x="905" y="115"/>
+        <point x="940" y="335"/>
+        <point x="985" y="545"/>
+        <point x="850" y="505"/>
+        <point x="755" y="595"/>
+        <point x="755" y="515"/>
+        <point x="95" y="515"/>
+      </shape>
+      <texture>wood.jpg</texture>
+    </it.freedomotic.model.environment.Zone>
+    <it.freedomotic.model.environment.Zone>
+      <name>Meeting room</name>
+      <description>From Meeting room you can reach Open space </description>
+      <room>true</room>
+      <shape>
+        <point x="90" y="515"/>
+        <point x="315" y="515"/>
+        <point x="315" y="1230"/>
+        <point x="90" y="1230"/>
+      </shape>
+      <texture>wood.jpg</texture>
+    </it.freedomotic.model.environment.Zone>
+    <it.freedomotic.model.environment.Zone>
+      <name>Open space</name>
+      <description>From Open space you can reach Meeting room </description>
+      <room>true</room>
+      <shape>
+        <point x="315" y="505"/>
+        <point x="385" y="505"/>
+        <point x="420" y="510"/>
+        <point x="755" y="510"/>
+        <point x="755" y="595"/>
+        <point x="755" y="740"/>
+        <point x="755" y="835"/>
+        <point x="760" y="1235"/>
+        <point x="730" y="1235"/>
+        <point x="315" y="1230"/>
+      </shape>
+      <texture>wood.jpg</texture>
+    </it.freedomotic.model.environment.Zone>
+    <it.freedomotic.model.environment.Zone>
+      <name>Kitchen</name>
+      <description></description>
+      <room>true</room>
+      <shape>
+        <point x="1035" y="755"/>
+        <point x="1400" y="755"/>
+        <point x="1405" y="1240"/>
+        <point x="1030" y="1240"/>
+      </shape>
+      <texture>wood.jpg</texture>
+    </it.freedomotic.model.environment.Zone>
+    <it.freedomotic.model.environment.Zone>
+      <name>Office</name>
+      <description></description>
+      <room>true</room>
+      <shape>
+        <point x="750" y="600"/>
+        <point x="815" y="525"/>
+        <point x="930" y="530"/>
+        <point x="995" y="585"/>
+        <point x="1005" y="1235"/>
+        <point x="755" y="1235"/>
+      </shape>
+      <texture>wood.jpg</texture>
+    </it.freedomotic.model.environment.Zone>
+    <it.freedomotic.model.environment.Zone>
+      <name>Utilities</name>
+      <description></description>
+      <room>true</room>
+      <shape>
+        <point x="910" y="125"/>
+        <point x="1385" y="125"/>
+        <point x="1390" y="740"/>
+        <point x="1040" y="740"/>
+      </shape>
+      <texture>wood.jpg</texture>
+    </it.freedomotic.model.environment.Zone>
+  </zones>
+  <uuid>44127b0a-4614-4d7b-a99c-a31a2b605607</uuid>
+</it.freedomotic.model.environment.Environment>

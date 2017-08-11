@@ -1,0 +1,130 @@
+package it.telecomitalia.scube.a3;
+
+import it.freedomotic.api.EventTemplate;
+import it.freedomotic.api.Protocol;
+import it.freedomotic.app.Freedomotic;
+import it.freedomotic.events.ObjectHasChangedBehavior;
+import it.freedomotic.events.ZoneHasChanged;
+import it.freedomotic.exceptions.UnableToExecuteException;
+import it.freedomotic.model.environment.Environment;
+import it.freedomotic.model.environment.Zone;
+import it.freedomotic.model.object.EnvObject;
+import it.freedomotic.reactions.Command;
+
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class A3 extends Protocol
+{
+
+    private static int POLLING_TIME = 1000;
+    private Map<String,LightNode> lights = new HashMap<String,LightNode>();
+
+    public A3()
+    {
+        super("A3", "/it.telecomitalia.a3/a3-manifest.xml");
+
+//        host = configuration.getProperty("host");
+//        port = Integer.valueOf(Integer.parseInt(configuration.getProperty("port")));
+//
+    }
+
+    protected void onShowGui()
+    {
+    }
+
+    public void onStart()
+    {
+        super.onStart();
+        setPollingWait(POLLING_TIME);
+
+        addEventListener("app.event.sensor.object.behavior.change");
+        addEventListener("app.event.sensor.environment.zone.change");
+        addEventListener("app.event.sensor.person.movement.detected");
+        addEventListener("app.events.sensors.moving.person.*");
+        addEventListener("app.events.sensors.person.zone");
+        
+        
+        setDescription((new StringBuilder()).append("Connected to A3").toString());
+        Environment env = Freedomotic.environment.getPojo();
+        ArrayList<Zone> zones = env.getZones();
+        for (int i= 0; i < zones.size(); i++) {
+        	Freedomotic.logger.info("Entering zone: " + zones.get(i).getName());
+        	String zone = zones.get(i).getName();
+        	ArrayList<EnvObject> objs = zones.get(i).getObjects();
+        	for (int j=0; j < objs.size(); j++) {
+        		Freedomotic.logger.info("Found object: " + objs.get(j).getType());
+        		if (objs.get(j).getType().equalsIgnoreCase("EnvObject.ElectricDevice.Light"))
+        		{
+        			LightNode newLight = new LightNode(objs.get(j));
+        			newLight.setLocation(zones.get(i).getName());
+        			//if(lights.get(newLight.getID()) == null)
+        			lights.put(newLight.getID(), newLight); 
+        			System.out.println("LightId "+objs.get(j).getName()+" Number of Lights: "+lights.size());
+
+        		}
+        		
+        	}
+        }
+        
+        System.out.println("Total Number of Lights: "+lights.size());
+        startA3();
+        
+    }
+
+    public void onStop()
+    {
+        super.onStop();
+        setDescription("Disconnected");
+        setPollingWait(-1);
+    }
+  
+    public void onCommand(Command c)
+        throws IOException, UnableToExecuteException
+    {
+    }
+
+    public boolean canExecute(Command c)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    protected void onRun()
+    {
+    }
+    
+    protected void startA3(){
+    	
+    }
+
+    protected void onEvent(EventTemplate event)
+    {
+    	System.out.println("Event Capture is instance of "+ event.getClass()); 
+    	 if (isRunning()) {
+    		 System.out.println("isRunning()-Event Capture and is instance of "+ event.getClass()); 
+             if (event instanceof ObjectHasChangedBehavior) {
+            	 //ObjectHasChangedBehavior objEvent= (ObjectHasChangedBehavior) event;
+            	 event.getProperty("object");
+            	 System.out.println("------Event name: "+event.getEventName()+ "...Event object "+ event.getProperty("object.name"));
+            	 
+             } else {
+                 if (event instanceof ZoneHasChanged) {
+                	 System.out.println("------Event name: "+event.getEventName()+ "...Event object "+ event.getProperty("sender"));
+                	 
+                     //writing the string on the screen
+//                     String zoneDesc = event.getProperty("zone.description");
+//                     Callout callout = new Callout(zoneDesc, 2000, Color.blue);
+//                     drawer.createCallout(callout);
+//                     drawer.setNeedRepaint(true);
+                 } else {
+                	 System.out.println("------Event name: "+event.getEventName()+ "...Event object "+ event.getProperty("sender"));
+
+ 				}
+             }
+         }
+    }
+
+}

@@ -1,0 +1,7 @@
+
+The package base-objects 3.0 is part of Freedomotic Building Automation framework.
+This package is released under the terms of GNU GPL2 license by  
+
+To add this to your current framework you have to copy the folder containing this file in folder FRAMEWORK_ROOT/plugins/objects
+Please be sure this plugin is compatible with your current framework version.
+For any problem you can contact the author at 

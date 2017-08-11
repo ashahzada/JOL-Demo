@@ -1,0 +1,19 @@
+#Filename 		 #EnvObjectName 			 #EnvObjectType 			 #Protocol 			 #Address
+05b0a734-f653-4700-be3d-a5e427dc0e33.xobj	Walter	EnvObject.Person.User	wifi_id	04-46-65-60-93-bd
+167be994-45df-4ec8-929b-06fc4cfdbb41.xobj	Office 1 switch	EnvObject.ElectricDevice	own	1*701988900#9
+e50d6c3d-d62d-434e-8583-462e1f4fbc47.xobj	Christian	EnvObject.Person.User	unknown	unknown
+5eaedf88-d062-4ffe-af05-f4db667d5108.xobj	Carmen	EnvObject.Person.User	unknown	unknown
+fd4a4277-da75-4e04-9c78-72c6b6512f04.xobj	Kitchen light	EnvObject.ElectricDevice.Light	unknown	1*47736900#9
+cd595c06-21c4-42de-92f9-c6f92c679bb6.xobj	Demo lights	EnvObject.ElectricDevice.Light	unknown	1*47731200#9
+6d31f980-bf79-4220-b9d5-c296ed478ea8.xobj	Server Door	EnvObject.Gate	unknown	unknown
+19007636-89ae-40bb-b775-352112bef648.xobj	General lights switch	EnvObject.ElectricDevice	unknown	unknown
+04ae1a5f-cf90-44a4-8550-bf5887f85f12.xobj	Cristina	EnvObject.Person.User	unknown	unknown
+8beab63b-f736-4883-bf15-a3638489caed.xobj	Entrance lights	EnvObject.ElectricDevice.Light	unknown	1*703496100#9
+8c893659-99e7-4759-87b0-a8ee7f24f33c.xobj	Meeting room door	EnvObject.Gate	unknown	unknown
+bcf1b756-dc4c-46a7-bb2a-aeccd457aef8.xobj	Massimo	EnvObject.Person.User	wifi_id	C4-85-08-90-E4-62
+94197cd5-6d7e-4a59-81d5-17a714f10d82.xobj	Francesco	EnvObject.Person.User	unknown	unknown
+b4125095-1f1e-4dce-bdfb-e3a9828ad957.xobj	Livingroom light	EnvObject.ElectricDevice.Light	unknown	1*47736000#9
+0e3d2724-5c6a-4d08-aca7-d057d75f2c7d.xobj	Luca	EnvObject.Person.User	unknown	unknown
+3e522c2f-ac54-4a8a-9929-0c5b313a5477.xobj	Meeting room lights	EnvObject.ElectricDevice.Light	unknown	1*47729400#9
+2e8d9076-5a0d-4e26-bec6-3939e2a1cf6e.xobj	Danny	EnvObject.Person.User	wifi_id	unknown
+5d7a9234-a399-4325-9505-f390585dc340.xobj	Emergency door lights	EnvObject.ElectricDevice.Light	unknown	1*47731300#9

@@ -1,0 +1,17 @@
+<config>
+    <properties>
+        <property name="description" value="Plugin for A3 integration"/>
+        <property name="protocol.name" value="a3"/>        
+        <property name="version" value="1.0.0"/>
+        <property name="required" value="5.2.0"/>  
+        <property name="category" value="protocol"/>
+        <property name="short-name" value="a3"/>
+        <property name="startup-time"   value="on load"/>
+        <property name="maxLightsOn"   value="3"/>
+    </properties>
+<tuples>
+        <tuple>
+        </tuple>
+</tuples>
+
+</config>
